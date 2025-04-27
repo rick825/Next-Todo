@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy":"git add -A && git commit -m 'update' && git push -u -f origin main"
+    "push":"git add -A && git commit -m 'update' && git push -u -f origin main"
   },
   "dependencies": {
     "firebase": "^11.6.1",
