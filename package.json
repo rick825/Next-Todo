@@ -7,11 +7,12 @@
     "build": "npm install && next build",
     "start": "next start",
     "lint": "next lint",
-    "push": "git add -A && git commit -m 'update' && git push -u -f origin main",
+    "compile": "git add -A && git commit -m 'Fix clean signup page export and analytics init' && git push -u -f origin main",
     "deploy": "npm run build"
   },
   "dependencies": {
     "firebase": "^11.6.1",
+    "lightningcss": "^1.29.3",
     "next": "^15.3.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
