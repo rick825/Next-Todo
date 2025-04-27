@@ -9,9 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          export TAILWIND_DISABLE_OXIDE=1
           npm install --force
-          npm run deploy
+          TAILWIND_DISABLE_OXIDE=1 npm run deploy
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
